@@ -19,15 +19,15 @@
 
 
             <div class="es-video" style="background-image: url('./images/bg-video.png'); background-size: cover;">
-                <!-- TODO: podmienić linka i wywalić img -->
-                <!-- <img class="es-video__iframe" src="./images/video-poster.jpg" alt="" role="presentation"> -->
+                <img class="es-video__frame" src="./images/video-frame.png" alt="" role="presentation">
+                <video class="es-video__video" width="320" height="240">
+                    <source src="./images/NYX_Fall25_SMUSHY_LIP_BALM_BTF_16x9_30.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
 
-                <!-- <iframe class="es-video__iframe" width="560" height="315"
-                    src="https://www.youtube.com/embed/Xg7p3LJZngU?si=cPC3GI8xWT6WPMmO" title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
-
+                <button class="es-video__play">
+                    <div class="es-video__play-icon"></div>
+                </button>
             </div>
 
             <div class="es-cross">
@@ -63,7 +63,8 @@
                                 Bare with me<br>korektor z serum
                             </p>
                             <p class="es-cross__desc">
-                                Pielęgnacyjne serum w&nbsp;korektorze tuszuje oznaki zmęczenia, czy sińce pod oczami, jak
+                                Pielęgnacyjne serum w&nbsp;korektorze tuszuje oznaki zmęczenia, czy sińce pod oczami,
+                                jak
                                 również zapewnia cerze głębokie nawilżenie aż&nbsp;do&nbsp;24&nbsp;godzin. Wegańska
                                 formuła wzbogacona
                                 ekstraktem z&nbsp;grzyba tremella, wąkrotki azjatyckiej i&nbsp;zielonej herbaty,
@@ -99,6 +100,9 @@
             </div>
         </div>
     </div>
+    <script src="./scripts/playVideo.js"></script>
+
+
 </body>
 
 </html>
