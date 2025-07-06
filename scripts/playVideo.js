@@ -33,6 +33,11 @@
   }
 
   playButton.addEventListener("click", () => {
+    playButton.setAttribute(
+      "aria-label",
+      video.paused ? "Zapauzuj filmik" : "Odtwórz filmik"
+    );
+    playButton.setAttribute("aria-pressed", !video.paused);
     if (video.paused) {
       video.play();
     } else {
