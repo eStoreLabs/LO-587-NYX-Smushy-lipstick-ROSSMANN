@@ -9,12 +9,12 @@
   margin: auto;
 }
 #es-rc #es-rc-content ::-moz-selection {
-  background-color: #00c380;
-  color: #ffffff;
+  background-color: #fdcf49;
+  color: #fd5798;
 }
 #es-rc #es-rc-content ::selection {
-  background-color: #00c380;
-  color: #ffffff;
+  background-color: #fdcf49;
+  color: #fd5798;
 }
 #es-rc #es-rc-content * {
   box-sizing: border-box;
@@ -29,12 +29,13 @@
 }
 #es-rc #es-rc-content .es-section-title {
   font-family: "Barlow Condensed", sans-serif;
-  font-size: 32px;
-  font-weight: 700;
+  font-size: 48px;
+  font-weight: 800;
   text-align: center;
   padding-block: 16px;
   text-transform: uppercase;
   text-wrap: balance;
+  color: #fdcf49;
 }
 #es-rc #es-rc-content .es-video {
   padding: 32px;
@@ -58,7 +59,7 @@
 }
 #es-rc #es-rc-content .es-cross .es-section-title {
   padding-block: 0;
-  margin-bottom: 60px;
+  margin-bottom: 48px;
 }
 #es-rc #es-rc-content .es-cross__productsCtn {
   display: flex;
@@ -67,10 +68,15 @@
   align-items: flex-end;
   container-type: inline-size;
   container-name: cross;
-  gap: 32px;
+  gap: 48px;
+}
+@media (min-width: 768px) {
+  #es-rc #es-rc-content .es-cross__productsCtn {
+    gap: 16px;
+  }
 }
 #es-rc #es-rc-content .es-cross__single {
-  max-width: 375px;
+  max-width: 275px;
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -80,7 +86,7 @@
 }
 #es-rc #es-rc-content .es-cross__img {
   transition: all 200ms ease-in-out;
-  max-height: 300px;
+  max-height: 250px;
   width: auto;
 }
 #es-rc #es-rc-content .es-cross__descCtn {
@@ -94,14 +100,19 @@
   font-weight: 900;
   text-transform: uppercase;
 }
+@container cross (min-width: 782px) {
+  #es-rc #es-rc-content .es-cross__name {
+    height: 65px;
+  }
+}
 #es-rc #es-rc-content .es-cross__desc {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 400;
   text-wrap: balance;
 }
 @container cross (min-width: 782px) {
   #es-rc #es-rc-content .es-cross__desc {
-    height: 100px;
+    height: 180px;
   }
 }
 #es-rc #es-rc-content .es-cross__link {
@@ -119,7 +130,8 @@
   margin: 0 auto;
 }
 #es-rc #es-rc-content .es-cross__link:hover {
-  background-color: #00c380;
+  background-color: #fdcf49;
+  color: #000000;
 }
 #es-rc #es-rc-content .es-footer {
   background-color: #000000;

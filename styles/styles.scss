@@ -12,14 +12,14 @@ $fw-extra-bold: 800;
 $fw-black: 900;
 
 $fs-base: 16px;
-$fs-header: 32px;
+$fs-header: 48px;
 
 $px-XS: 4px;
 $px-S: 8px;
 $px-M: 16px;
 $px-L: 24px;
 $px-XL: 32px;
-$px-XXL: 40px;
+$px-XXL: 48px;
 
 $color-main: #ffffff;
 $color-bg: #fd5798;
@@ -45,8 +45,8 @@ $transition: all 200ms ease-in-out;
   margin: auto;
 
   ::selection {
-    background-color: $color-accent;
-    color: $color-main;
+    background-color: $color-accent-3;
+    color: $color-bg;
   }
 
   // minimal css reset
@@ -68,16 +68,16 @@ $transition: all 200ms ease-in-out;
   .es-section-title {
     font-family: $text-secondary;
     font-size: $fs-header;
-    font-weight: $fw-bold;
+    font-weight: $fw-extra-bold;
     text-align: center;
     padding-block: $px-M;
     text-transform: uppercase;
     text-wrap: balance;
+    color: $color-accent-3;
   }
 
   .es-video {
     padding: $px-XL;
-
 
     &__iframe {
       width: 100%;
@@ -98,7 +98,7 @@ $transition: all 200ms ease-in-out;
 
     .es-section-title {
       padding-block: 0;
-      margin-bottom: 60px;
+      margin-bottom: $px-XXL;
     }
     &__productsCtn {
       display: flex;
@@ -107,11 +107,14 @@ $transition: all 200ms ease-in-out;
       align-items: flex-end;
       container-type: inline-size;
       container-name: cross;
-      gap: 32px;
+      gap: $px-XXL;
+      @media (min-width: $media-breakpoint-md) {
+        gap: $px-M;
+      }
     }
 
     &__single {
-      max-width: 375px;
+      max-width: 275px;
       display: flex;
       flex-direction: column;
       gap: $px-XL;
@@ -124,7 +127,7 @@ $transition: all 200ms ease-in-out;
     }
     &__img {
       transition: $transition;
-      max-height: 300px;
+      max-height: 250px;
       width: auto;
     }
     &__descCtn {
@@ -137,14 +140,17 @@ $transition: all 200ms ease-in-out;
       font-size: 18px;
       font-weight: $fw-black;
       text-transform: uppercase;
+      @container cross (min-width: 782px) {
+        height: 65px;
+      }
     }
 
     &__desc {
       font-size: $fs-base;
-      font-weight: $fw-semi-bold;
+      font-weight: $fw-regular;
       text-wrap: balance;
       @container cross (min-width: 782px) {
-        height: 100px;
+        height: 180px;
       }
     }
 
@@ -163,7 +169,8 @@ $transition: all 200ms ease-in-out;
       margin: 0 auto;
 
       &:hover {
-        background-color: $color-accent;
+        background-color: $color-accent-3;
+        color: $color-black;
       }
     }
   }
