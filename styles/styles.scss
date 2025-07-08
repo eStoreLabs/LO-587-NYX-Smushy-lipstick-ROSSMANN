@@ -189,6 +189,9 @@ $transition: all 200ms ease-in-out;
     background-color: $color-accent;
     padding: $px-XL;
     margin-block: $px-XXL;
+    container-type: inline-size;
+    container-name: steps;
+    position: relative;
     &__title {
       display: flex;
       flex-direction: column;
@@ -235,6 +238,25 @@ $transition: all 200ms ease-in-out;
       font-weight: $fw-extra-bold;
       font-size: 28px;
       text-align: center;
+    }
+    &__product {
+      margin-top: $px-XXL;
+      @container steps (min-width: 500px) {
+        margin-top: 0;
+        position: absolute;
+        bottom: -9%;
+        left: 0;
+        z-index: 1;
+      }
+      @container steps (min-width: 895px) {
+        bottom: -25%;
+      }
+      &Img {
+        max-width: 150px;
+        @container steps (min-width: 500px) {
+          margin: 0;
+        }
+      }
     }
   }
 
