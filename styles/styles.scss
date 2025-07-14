@@ -383,6 +383,127 @@ $transition: all 200ms ease-in-out;
     }
   }
 
+  .es-colors {
+    &__subtitle {
+      font-weight: $fw-extra-bold;
+      text-transform: uppercase;
+      font-size: 20px;
+      text-align: center;
+      text-wrap: balance;
+    }
+    &__ctn--1 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 5px;
+      margin-block: $px-XL;
+    }
+    &__single--1 {
+      max-width: 200px;
+      overflow: hidden;
+      &__product {
+        padding: 14px;
+        &__img {
+          transition: $transition;
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+
+        &--1 {
+          background-color: #e9d5f6;
+        }
+        &--2 {
+          background-color: #b74f6f;
+        }
+        &--3 {
+          background-color: #d0356e;
+        }
+        &--4 {
+          background-color: #a7015b;
+        }
+        &--5 {
+          background-color: #9e454f;
+        }
+        &--6 {
+          background-color: #8c553c;
+        }
+        &--7 {
+          background-color: #5e1620;
+        }
+        &--8 {
+          background-color: #501b1a;
+        }
+        &--9 {
+          background-color: #c3000f;
+        }
+        &--10 {
+          background-color: #980034;
+        }
+        &--11 {
+          background-color: #6c002d;
+        }
+        &--12 {
+          background-color: #7b014a;
+        }
+      }
+      &__lips {
+        overflow: hidden;
+        &__img {
+          transition: $transition;
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+      }
+      &__name {
+        font-weight: $fw-extra-bold;
+        text-transform: uppercase;
+        text-align: center;
+        text-wrap: balance;
+        padding-block: 10px;
+        &--1 {
+          background-color: #0003b9;
+        }
+        &--2 {
+          background-color: #9c0044;
+        }
+        &--3 {
+          background-color: #f3d31a;
+          color: $color-bg;
+        }
+        &--4 {
+          background-color: #f377b9;
+        }
+        &--5 {
+          background-color: #46c071;
+        }
+        &--6 {
+          background-color: #00a14d;
+        }
+        &--7 {
+          background-color: #f12817;
+        }
+        &--8 {
+          background-color: #fa5471;
+        }
+        &--9 {
+          background-color: #3bca9f;
+        }
+        &--10 {
+          background-color: #008eea;
+        }
+        &--11 {
+          background-color: #f171b1;
+        }
+        &--12 {
+          background-color: #ffdf00;
+          color: #7b014a;
+        }
+      }
+    }
+  }
+
   .es-video {
     padding: $px-XL;
     position: relative;

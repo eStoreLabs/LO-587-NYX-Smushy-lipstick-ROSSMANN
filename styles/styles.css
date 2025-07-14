@@ -361,6 +361,123 @@
     justify-content: center;
   }
 }
+#es-rc #es-rc-content .es-colors__subtitle {
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 20px;
+  text-align: center;
+  text-wrap: balance;
+}
+#es-rc #es-rc-content .es-colors__ctn--1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  margin-block: 32px;
+}
+#es-rc #es-rc-content .es-colors__single--1 {
+  max-width: 200px;
+  overflow: hidden;
+}
+#es-rc #es-rc-content .es-colors__single--1__product {
+  padding: 14px;
+}
+#es-rc #es-rc-content .es-colors__single--1__product__img {
+  transition: all 200ms ease-in-out;
+}
+#es-rc #es-rc-content .es-colors__single--1__product__img:hover {
+  transform: scale(1.1);
+}
+#es-rc #es-rc-content .es-colors__single--1__product--1 {
+  background-color: #e9d5f6;
+}
+#es-rc #es-rc-content .es-colors__single--1__product--2 {
+  background-color: #b74f6f;
+}
+#es-rc #es-rc-content .es-colors__single--1__product--3 {
+  background-color: #d0356e;
+}
+#es-rc #es-rc-content .es-colors__single--1__product--4 {
+  background-color: #a7015b;
+}
+#es-rc #es-rc-content .es-colors__single--1__product--5 {
+  background-color: #9e454f;
+}
+#es-rc #es-rc-content .es-colors__single--1__product--6 {
+  background-color: #8c553c;
+}
+#es-rc #es-rc-content .es-colors__single--1__product--7 {
+  background-color: #5e1620;
+}
+#es-rc #es-rc-content .es-colors__single--1__product--8 {
+  background-color: #501b1a;
+}
+#es-rc #es-rc-content .es-colors__single--1__product--9 {
+  background-color: #c3000f;
+}
+#es-rc #es-rc-content .es-colors__single--1__product--10 {
+  background-color: #980034;
+}
+#es-rc #es-rc-content .es-colors__single--1__product--11 {
+  background-color: #6c002d;
+}
+#es-rc #es-rc-content .es-colors__single--1__product--12 {
+  background-color: #7b014a;
+}
+#es-rc #es-rc-content .es-colors__single--1__lips {
+  overflow: hidden;
+}
+#es-rc #es-rc-content .es-colors__single--1__lips__img {
+  transition: all 200ms ease-in-out;
+}
+#es-rc #es-rc-content .es-colors__single--1__lips__img:hover {
+  transform: scale(1.1);
+}
+#es-rc #es-rc-content .es-colors__single--1__name {
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+  text-wrap: balance;
+  padding-block: 10px;
+}
+#es-rc #es-rc-content .es-colors__single--1__name--1 {
+  background-color: #0003b9;
+}
+#es-rc #es-rc-content .es-colors__single--1__name--2 {
+  background-color: #9c0044;
+}
+#es-rc #es-rc-content .es-colors__single--1__name--3 {
+  background-color: #f3d31a;
+  color: #fd5798;
+}
+#es-rc #es-rc-content .es-colors__single--1__name--4 {
+  background-color: #f377b9;
+}
+#es-rc #es-rc-content .es-colors__single--1__name--5 {
+  background-color: #46c071;
+}
+#es-rc #es-rc-content .es-colors__single--1__name--6 {
+  background-color: #00a14d;
+}
+#es-rc #es-rc-content .es-colors__single--1__name--7 {
+  background-color: #f12817;
+}
+#es-rc #es-rc-content .es-colors__single--1__name--8 {
+  background-color: #fa5471;
+}
+#es-rc #es-rc-content .es-colors__single--1__name--9 {
+  background-color: #3bca9f;
+}
+#es-rc #es-rc-content .es-colors__single--1__name--10 {
+  background-color: #008eea;
+}
+#es-rc #es-rc-content .es-colors__single--1__name--11 {
+  background-color: #f171b1;
+}
+#es-rc #es-rc-content .es-colors__single--1__name--12 {
+  background-color: #ffdf00;
+  color: #7b014a;
+}
 #es-rc #es-rc-content .es-video {
   padding: 32px;
   position: relative;
