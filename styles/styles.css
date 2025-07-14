@@ -236,9 +236,25 @@
 #es-rc #es-rc-content .es-formula__left-img {
   max-width: 250px;
 }
+@media (min-width: 768px) {
+  #es-rc #es-rc-content .es-formula__left-img {
+    max-width: 280px;
+  }
+}
+@media (min-width: 880px) {
+  #es-rc #es-rc-content .es-formula__left-img {
+    max-width: 300px;
+  }
+}
 #es-rc #es-rc-content .es-formula__left-title {
   color: #00c380;
   line-height: 0.5;
+}
+@media (min-width: 768px) {
+  #es-rc #es-rc-content .es-formula__left {
+    width: 40%;
+    margin-right: -50px;
+  }
 }
 #es-rc #es-rc-content .es-formula__right {
   position: relative;
@@ -298,12 +314,52 @@
     border-left: 2px solid #ffffff;
   }
 }
+@container formula (min-width: 645px) {
+  #es-rc #es-rc-content .es-formula__right-textCtn--1::after {
+    height: 400%;
+  }
+}
+@media (min-width: 768px) {
+  #es-rc #es-rc-content .es-formula__right-textCtn--1 {
+    min-width: -moz-max-content;
+    min-width: max-content;
+    left: 9%;
+  }
+  #es-rc #es-rc-content .es-formula__right-textCtn--1::after {
+    height: 320%;
+  }
+  #es-rc #es-rc-content .es-formula__right-textCtn--2 {
+    bottom: 18%;
+    right: -13%;
+  }
+}
+@media (min-width: 880px) {
+  #es-rc #es-rc-content .es-formula__right-textCtn--1 {
+    left: 15%;
+  }
+  #es-rc #es-rc-content .es-formula__right-textCtn--2 {
+    bottom: 21%;
+    right: -7%;
+  }
+}
 #es-rc #es-rc-content .es-formula__right-text {
   text-transform: uppercase;
   font-family: "Barlow Condensed", sans-serif;
   font-weight: 800;
   font-size: 26px;
   text-align: center;
+}
+@media (min-width: 768px) {
+  #es-rc #es-rc-content .es-formula__right {
+    width: 60%;
+  }
+}
+@media (min-width: 768px) {
+  #es-rc #es-rc-content .es-formula {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 #es-rc #es-rc-content .es-video {
   padding: 32px;
