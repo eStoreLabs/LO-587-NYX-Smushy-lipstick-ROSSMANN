@@ -368,6 +368,59 @@
     justify-content: center;
   }
 }
+#es-rc #es-rc-content .es-colors .swiper-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: -moz-min-content;
+  width: min-content;
+  margin: auto;
+}
+#es-rc #es-rc-content .es-colors .swiper-button-prev,
+#es-rc #es-rc-content .es-colors .swiper-button-next {
+  cursor: pointer;
+  color: #00c380;
+  position: unset;
+  margin: unset;
+}
+#es-rc #es-rc-content .es-colors .swiper-button-prev:after,
+#es-rc #es-rc-content .es-colors .swiper-rtl .swiper-button-next:after,
+#es-rc #es-rc-content .es-colors .swiper-button-next:after,
+#es-rc #es-rc-content .es-colors .swiper-rtl .swiper-button-prev:after {
+  font-size: 20px;
+  font-weight: 900;
+}
+#es-rc #es-rc-content .es-colors .swiper-pagination {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  position: unset;
+}
+#es-rc #es-rc-content .es-colors .swiper-pagination-bullet-active {
+  background: #00c380;
+}
+@media (max-width: 755px) {
+  #es-rc #es-rc-content .es-colors #esColorsSwiper .swiper-wrapper {
+    display: block !important;
+    transform: none !important;
+    width: 100% !important;
+  }
+  #es-rc #es-rc-content .es-colors #esColorsSwiper .swiper-slide {
+    width: 100% !important;
+    margin-bottom: 2rem;
+    display: block;
+  }
+  #es-rc #es-rc-content .es-colors .swiper-controls {
+    display: none;
+  }
+}
+#es-rc #es-rc-content .es-colors .swiper-wrapper.swiper-no-swiping {
+  display: block;
+}
+#es-rc #es-rc-content .es-colors .swiper-wrapper.swiper-no-swiping > .swiper-slide {
+  width: 100% !important;
+  margin-bottom: 2rem;
+}
 #es-rc #es-rc-content .es-colors__slide__title {
   max-width: 88%;
   margin: auto;
@@ -491,6 +544,13 @@
 #es-rc #es-rc-content .es-colors__single--1__name--12 {
   background-color: #ffdf00;
   color: #7b014a;
+}
+#es-rc #es-rc-content .es-colors__ctn--2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  margin-block: 32px;
 }
 #es-rc #es-rc-content .es-colors__single--2 {
   max-width: 135px;
