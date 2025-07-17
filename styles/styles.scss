@@ -13,7 +13,8 @@ $fw-black: 900;
 
 $fs-base: 16px;
 $fs-header: 48px;
-$fs-header-big: 60px;
+$fs-header-md: 60px;
+$fs-header-lg: 72px;
 
 $px-XS: 4px;
 $px-S: 8px;
@@ -75,8 +76,12 @@ $transition: all 200ms ease-in-out;
     text-transform: uppercase;
     text-wrap: balance;
     color: $color-accent-3;
+    line-height: 0.9;
     @media (min-width: $media-breakpoint-md) {
-      font-size: $fs-header-big;
+      font-size: $fs-header-md;
+    }
+    @media (min-width: $media-breakpoint-lg) {
+      font-size: $fs-header-lg;
     }
   }
 
@@ -661,6 +666,13 @@ $transition: all 200ms ease-in-out;
   }
 
   .es-colors {
+    padding-bottom: $px-XL;
+
+    //swiper styles
+
+    .swiper-slide {
+      height: auto;
+    }
     .swiper-controls {
       display: flex;
       justify-content: center;
@@ -853,11 +865,12 @@ $transition: all 200ms ease-in-out;
       flex-wrap: wrap;
       justify-content: center;
       gap: 5px;
-      margin-block: $px-XL;
+      row-gap: 60px;
+      margin-block: $px-XXL;
     }
 
     &__single--2 {
-      max-width: 135px;
+      max-width: 150px;
       position: relative;
       &__product {
         position: absolute;
@@ -890,10 +903,41 @@ $transition: all 200ms ease-in-out;
         &--2 {
           background: #9c004b;
         }
+        &--3 {
+          background: #ffba00;
+        }
+        &--4 {
+          background: #ff8bd4;
+        }
+        &--5 {
+          background: #00d370;
+        }
+        &--6 {
+          background: #00ad48;
+        }
+        &--7 {
+          background: #f80000;
+        }
+        &--8 {
+          background: #f53860;
+        }
+        &--9 {
+          background: #00cc99;
+        }
+        &--10 {
+          background: #00a3ed;
+        }
+        &--11 {
+          background: #ff63b5;
+        }
+        &--12 {
+          background: #ffd300;
+        }
       }
       &__scent {
         &__text {
           font-size: 12px;
+          margin-bottom: 4px;
         }
         &__name {
           font-family: $text-secondary;
@@ -902,11 +946,43 @@ $transition: all 200ms ease-in-out;
           text-align: center;
           text-wrap: balance;
           font-size: 20px;
+          line-height: 1;
+          margin-bottom: 14px;
           &--1 {
             color: #cdb1e6;
           }
           &--2 {
             color: #dc6180;
+          }
+          &--3 {
+            color: #dc1f60;
+          }
+          &--4 {
+            color: #a7004a;
+          }
+          &--5 {
+            color: #a93440;
+          }
+          &--6 {
+            color: #8b3f25;
+          }
+          &--7 {
+            color: #610411;
+          }
+          &--8 {
+            color: #540b09;
+          }
+          &--9 {
+            color: #cb0009;
+          }
+          &--10 {
+            color: #ce1569;
+          }
+          &--11 {
+            color: #70001d;
+          }
+          &--12 {
+            color: #880042;
           }
         }
       }

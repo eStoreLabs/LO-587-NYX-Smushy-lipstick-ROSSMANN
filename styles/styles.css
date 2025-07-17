@@ -36,10 +36,16 @@
   text-transform: uppercase;
   text-wrap: balance;
   color: #fdcf49;
+  line-height: 0.9;
 }
 @media (min-width: 768px) {
   #es-rc #es-rc-content .es-section-title {
     font-size: 60px;
+  }
+}
+@media (min-width: 880px) {
+  #es-rc #es-rc-content .es-section-title {
+    font-size: 72px;
   }
 }
 #es-rc #es-rc-content .sr-only {
@@ -368,6 +374,12 @@
     justify-content: center;
   }
 }
+#es-rc #es-rc-content .es-colors {
+  padding-bottom: 32px;
+}
+#es-rc #es-rc-content .es-colors .swiper-slide {
+  height: auto;
+}
 #es-rc #es-rc-content .es-colors .swiper-controls {
   display: flex;
   justify-content: center;
@@ -550,10 +562,11 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 5px;
-  margin-block: 32px;
+  row-gap: 60px;
+  margin-block: 48px;
 }
 #es-rc #es-rc-content .es-colors__single--2 {
-  max-width: 135px;
+  max-width: 150px;
   position: relative;
 }
 #es-rc #es-rc-content .es-colors__single--2__product {
@@ -588,8 +601,39 @@
 #es-rc #es-rc-content .es-colors__single--2__cloud--2 {
   background: #9c004b;
 }
+#es-rc #es-rc-content .es-colors__single--2__cloud--3 {
+  background: #ffba00;
+}
+#es-rc #es-rc-content .es-colors__single--2__cloud--4 {
+  background: #ff8bd4;
+}
+#es-rc #es-rc-content .es-colors__single--2__cloud--5 {
+  background: #00d370;
+}
+#es-rc #es-rc-content .es-colors__single--2__cloud--6 {
+  background: #00ad48;
+}
+#es-rc #es-rc-content .es-colors__single--2__cloud--7 {
+  background: #f80000;
+}
+#es-rc #es-rc-content .es-colors__single--2__cloud--8 {
+  background: #f53860;
+}
+#es-rc #es-rc-content .es-colors__single--2__cloud--9 {
+  background: #00cc99;
+}
+#es-rc #es-rc-content .es-colors__single--2__cloud--10 {
+  background: #00a3ed;
+}
+#es-rc #es-rc-content .es-colors__single--2__cloud--11 {
+  background: #ff63b5;
+}
+#es-rc #es-rc-content .es-colors__single--2__cloud--12 {
+  background: #ffd300;
+}
 #es-rc #es-rc-content .es-colors__single--2__scent__text {
   font-size: 12px;
+  margin-bottom: 4px;
 }
 #es-rc #es-rc-content .es-colors__single--2__scent__name {
   font-family: "Barlow Condensed", sans-serif;
@@ -598,12 +642,44 @@
   text-align: center;
   text-wrap: balance;
   font-size: 20px;
+  line-height: 1;
+  margin-bottom: 14px;
 }
 #es-rc #es-rc-content .es-colors__single--2__scent__name--1 {
   color: #cdb1e6;
 }
 #es-rc #es-rc-content .es-colors__single--2__scent__name--2 {
   color: #dc6180;
+}
+#es-rc #es-rc-content .es-colors__single--2__scent__name--3 {
+  color: #dc1f60;
+}
+#es-rc #es-rc-content .es-colors__single--2__scent__name--4 {
+  color: #a7004a;
+}
+#es-rc #es-rc-content .es-colors__single--2__scent__name--5 {
+  color: #a93440;
+}
+#es-rc #es-rc-content .es-colors__single--2__scent__name--6 {
+  color: #8b3f25;
+}
+#es-rc #es-rc-content .es-colors__single--2__scent__name--7 {
+  color: #610411;
+}
+#es-rc #es-rc-content .es-colors__single--2__scent__name--8 {
+  color: #540b09;
+}
+#es-rc #es-rc-content .es-colors__single--2__scent__name--9 {
+  color: #cb0009;
+}
+#es-rc #es-rc-content .es-colors__single--2__scent__name--10 {
+  color: #ce1569;
+}
+#es-rc #es-rc-content .es-colors__single--2__scent__name--11 {
+  color: #70001d;
+}
+#es-rc #es-rc-content .es-colors__single--2__scent__name--12 {
+  color: #880042;
 }
 #es-rc #es-rc-content .es-video {
   padding: 32px;

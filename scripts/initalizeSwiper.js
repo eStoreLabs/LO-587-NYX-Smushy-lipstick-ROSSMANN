@@ -8,8 +8,10 @@
       enabled: false, // start disabled for mobile
       slidesPerView: 1,
       loop: true,
-      authoHeight: true,
-      autoplay: false,
+      autoHeight: true,
+      autoplay: {
+        delay: 5000,
+      },
       pagination: {
         el: "#es-swiper-pagination",
         clickable: true,
