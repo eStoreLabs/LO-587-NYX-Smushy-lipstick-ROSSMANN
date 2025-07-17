@@ -1,3 +1,17 @@
+@keyframes es-slow-pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
 #es-rc #es-rc-content {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
@@ -191,6 +205,7 @@
 #es-rc #es-rc-content .es-steps__smush {
   max-width: 150px;
   margin: 0;
+  animation: es-slow-pulse 5s ease-in-out infinite;
 }
 @media (min-width: 768px) {
   #es-rc #es-rc-content .es-steps__smush {
@@ -248,6 +263,7 @@
 }
 #es-rc #es-rc-content .es-formula__left-img {
   max-width: 250px;
+  animation: es-slow-pulse 5s ease-in-out infinite;
 }
 @media (min-width: 768px) {
   #es-rc #es-rc-content .es-formula__left-img {
@@ -282,6 +298,10 @@
   left: 50%;
   top: 42%;
   max-width: 80%;
+  transition: all 200ms ease-in-out;
+}
+#es-rc #es-rc-content .es-formula__right-prod:hover {
+  transform: translate(-50%, -50%) scale(1.1);
 }
 #es-rc #es-rc-content .es-formula__right-textCtn {
   margin-block: 16px;

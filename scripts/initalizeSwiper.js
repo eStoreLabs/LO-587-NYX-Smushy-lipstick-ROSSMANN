@@ -11,6 +11,7 @@
       autoHeight: true,
       autoplay: {
         delay: 5000,
+        disableOnInteraction: true,
       },
       pagination: {
         el: "#es-swiper-pagination",
