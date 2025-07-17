@@ -33,6 +33,7 @@ $color-black: #000000;
 $media-breakpoint-sm: 576px;
 $media-breakpoint-md: 768px;
 $media-breakpoint-lg: 880px;
+$media-breakpoint-xl: 992px;
 
 $transition: all 200ms ease-in-out;
 
@@ -443,8 +444,8 @@ $transition: all 200ms ease-in-out;
           @container kvLeft (min-width: 464px) {
             position: absolute;
             transform: translate(-50%, -50%);
-            left: 74%;
-            top: 76%;
+            left: 72%;
+            top: 72%;
             width: 260px;
             padding: 0;
           }
@@ -484,8 +485,8 @@ $transition: all 200ms ease-in-out;
 
   .es-steps {
     background-color: $color-accent;
-    padding: $px-XL;
-    margin-block: $px-XXL;
+    padding-block: $px-XXL;
+    margin-bottom: $px-XXL;
     container-type: inline-size;
     container-name: steps;
     position: relative;
@@ -555,6 +556,15 @@ $transition: all 200ms ease-in-out;
           margin: 0;
         }
       }
+    }
+    @media (min-width: $media-breakpoint-md) {
+      margin-top: -2%;
+    }
+    @media (min-width: $media-breakpoint-lg) {
+      margin-top: -30px;
+    }
+    @media (min-width: $media-breakpoint-xl) {
+      margin-top: -40px;
     }
   }
 

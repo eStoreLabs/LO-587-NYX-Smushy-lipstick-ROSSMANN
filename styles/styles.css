@@ -136,8 +136,8 @@
     #es-rc #es-rc-content .es-kv__left-textCtn {
       position: absolute;
       transform: translate(-50%, -50%);
-      left: 74%;
-      top: 76%;
+      left: 72%;
+      top: 72%;
       width: 260px;
       padding: 0;
     }
@@ -174,8 +174,8 @@
 }
 #es-rc #es-rc-content .es-steps {
   background-color: #00c380;
-  padding: 32px;
-  margin-block: 48px;
+  padding-block: 48px;
+  margin-bottom: 48px;
   container-type: inline-size;
   container-name: steps;
   position: relative;
@@ -256,6 +256,21 @@
 @container steps (min-width: 500px) {
   #es-rc #es-rc-content .es-steps__productImg {
     margin: 0;
+  }
+}
+@media (min-width: 768px) {
+  #es-rc #es-rc-content .es-steps {
+    margin-top: -2%;
+  }
+}
+@media (min-width: 880px) {
+  #es-rc #es-rc-content .es-steps {
+    margin-top: -30px;
+  }
+}
+@media (min-width: 992px) {
+  #es-rc #es-rc-content .es-steps {
+    margin-top: -40px;
   }
 }
 #es-rc #es-rc-content .es-formula {
