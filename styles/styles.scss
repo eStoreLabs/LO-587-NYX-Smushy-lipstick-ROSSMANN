@@ -466,19 +466,6 @@ $transition: all 200ms ease-in-out;
         right: 0;
         top: 0;
         z-index: 1;
-        img {
-          margin-top: 16px;
-        }
-        &::after {
-          content: "";
-          position: absolute;
-          top: 0;
-          right: 0;
-          width: 81%;
-          height: 16px;
-          background-color: $color-accent;
-          z-index: -1;
-        }
       }
     }
   }
@@ -506,7 +493,7 @@ $transition: all 200ms ease-in-out;
       @media (min-width: 450px) {
         flex-direction: row;
         align-items: baseline;
-        gap: $px-S;
+        gap: $px-M;
       }
     }
     &__smush {
@@ -558,13 +545,7 @@ $transition: all 200ms ease-in-out;
       }
     }
     @media (min-width: $media-breakpoint-md) {
-      margin-top: -2%;
-    }
-    @media (min-width: $media-breakpoint-lg) {
-      margin-top: -30px;
-    }
-    @media (min-width: $media-breakpoint-xl) {
-      margin-top: -40px;
+      margin-top: -4%;
     }
   }
 

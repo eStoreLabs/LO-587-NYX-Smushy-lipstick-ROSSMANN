@@ -158,19 +158,6 @@
     top: 0;
     z-index: 1;
   }
-  #es-rc #es-rc-content .es-kv__right img {
-    margin-top: 16px;
-  }
-  #es-rc #es-rc-content .es-kv__right::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 81%;
-    height: 16px;
-    background-color: #00c380;
-    z-index: -1;
-  }
 }
 #es-rc #es-rc-content .es-steps {
   background-color: #00c380;
@@ -199,7 +186,7 @@
   #es-rc #es-rc-content .es-steps__title {
     flex-direction: row;
     align-items: baseline;
-    gap: 8px;
+    gap: 16px;
   }
 }
 #es-rc #es-rc-content .es-steps__smush {
@@ -260,17 +247,7 @@
 }
 @media (min-width: 768px) {
   #es-rc #es-rc-content .es-steps {
-    margin-top: -2%;
-  }
-}
-@media (min-width: 880px) {
-  #es-rc #es-rc-content .es-steps {
-    margin-top: -30px;
-  }
-}
-@media (min-width: 992px) {
-  #es-rc #es-rc-content .es-steps {
-    margin-top: -40px;
+    margin-top: -4%;
   }
 }
 #es-rc #es-rc-content .es-formula {
