@@ -766,7 +766,7 @@ $transition: all 200ms ease-in-out;
       margin-block: $px-XL;
     }
     &__single--1 {
-      max-width: 200px;
+      max-width: 150px;
       overflow: hidden;
       &__product {
         padding: 14px;
@@ -831,6 +831,7 @@ $transition: all 200ms ease-in-out;
         text-align: center;
         text-wrap: balance;
         padding-block: 10px;
+        font-size: 12px;
         &--1 {
           background-color: #0003b9;
         }
@@ -1118,8 +1119,17 @@ $transition: all 200ms ease-in-out;
     }
     &__img {
       transition: $transition;
-      max-height: 250px;
+
       width: auto;
+      &--1 {
+        max-height: 220px;
+      }
+      &--2 {
+        max-height: 250px;
+      }
+      &--3 {
+        max-height: 180px;
+      }
     }
     &__descCtn {
       display: flex;
