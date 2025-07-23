@@ -12,18 +12,18 @@
   let hideTimeout;
 
   const updateIcon = (isPlaying) => {
-    playIcon.classList.toggle("is-pause", isPlaying);
+    playIcon.classList.toggle("es-is-pause", isPlaying);
   };
 
   const showButton = () => {
     clearTimeout(hideTimeout);
-    playButton.classList.add("is-visible");
+    playButton.classList.add("es-is-visible");
   };
 
   const hideButton = (delay = 0) => {
     clearTimeout(hideTimeout);
     hideTimeout = setTimeout(() => {
-      playButton.classList.remove("is-visible");
+      playButton.classList.remove("es-is-visible");
     }, delay);
   };
 
@@ -42,20 +42,20 @@
       video.play();
     } else {
       video.pause();
-      videoContainer.classList.remove("is-playing");
+      videoContainer.classList.remove("es-is-playing");
       updateIcon(false);
       showButton();
     }
   });
 
   video.addEventListener("play", () => {
-    videoContainer.classList.add("is-playing");
+    videoContainer.classList.add("es-is-playing");
     updateIcon(true);
     hideButton(1000);
   });
 
   video.addEventListener("pause", () => {
-    videoContainer.classList.remove("is-playing");
+    videoContainer.classList.remove("es-is-playing");
     updateIcon(false);
     showButton();
   });

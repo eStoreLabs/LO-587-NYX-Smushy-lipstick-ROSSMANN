@@ -1039,7 +1039,7 @@ $transition: all 200ms ease-in-out;
       align-items: center;
       justify-content: center;
 
-      &.is-visible {
+      &.es-is-visible {
         display: flex;
       }
 
@@ -1051,7 +1051,7 @@ $transition: all 200ms ease-in-out;
         margin-left: 6px;
         border-color: transparent transparent transparent $color-main;
 
-        &.is-pause {
+        &.es-is-pause {
           width: 16px;
           height: 16px;
           border: none;

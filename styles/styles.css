@@ -730,7 +730,7 @@
   align-items: center;
   justify-content: center;
 }
-#es-rc #es-rc-content .es-video__play.is-visible {
+#es-rc #es-rc-content .es-video__play.es-is-visible {
   display: flex;
 }
 #es-rc #es-rc-content .es-video__play-icon {
@@ -741,7 +741,7 @@
   margin-left: 6px;
   border-color: transparent transparent transparent #ffffff;
 }
-#es-rc #es-rc-content .es-video__play-icon.is-pause {
+#es-rc #es-rc-content .es-video__play-icon.es-is-pause {
   width: 16px;
   height: 16px;
   border: none;
@@ -750,7 +750,7 @@
   justify-content: space-between;
   align-items: center;
 }
-#es-rc #es-rc-content .es-video__play-icon.is-pause::before, #es-rc #es-rc-content .es-video__play-icon.is-pause::after {
+#es-rc #es-rc-content .es-video__play-icon.es-is-pause::before, #es-rc #es-rc-content .es-video__play-icon.es-is-pause::after {
   content: "";
   display: block;
   width: 4px;
